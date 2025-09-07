@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth</title>
+    <!-- DaisyUI CDN and Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font link -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+
+<body class="font-['Inter'] bg-[#F0FDF4]">
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar bg-[#166534] text-white ">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl font-bold">Green Earth</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[18px] font-semibold">
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Plant a Tree</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button
+                    class=" px-5 py-3 rounded-full text-[#15803D] bg-[#FACC15] cursor-pointer hover:bg-yellow-300">Plant
+                    a Tree</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner Section -->
+    <section id="banner" class="flex justify-evenly items-center h-[383px] bg-[#CFF0DC]">
+        <div class=""><img class="h-[383px] w-[400px]" src="./assets/hero-leaf1.png" alt=""></div>
+        <div class="flex flex-col h-[383px] w-auto justify-center items-center gap-5">
+            <h1 class="text-4xl font-bold text-black">Plant a Tree, Grow a Future</h1>
+            <p class="text-[13px] text-center">Join our mission to plant 1 million trees and make the Earth greener for
+                future generations.</p>
+            <button class="px-5 py-3 rounded-full text-[#15803D] bg-[#FACC15] cursor-pointer hover:bg-yellow-300">Get
+                Involved</button>
+        </div>
+        <div class=""><img class="h-[383px] w-[400px]" src="./assets/hero-leaf2.png" alt=""></div>
+    </section>
+
+    <!-- Trees Details Section -->
+    <section id="trees">
+        <div class="text-center my-10 border-2 border-green-500 rounded-lg p-5 mx-20">
+            <div class="font-bold text-lg">Choose Our Trees</div>
+            <div class="flex justify-evenly items-center text-left mt-2 gap-2 mt-5">
+                <div class=" border-2 w-[200px]">
+                    <div class="p-2 font-bold">Categories</div>
+                    <div class="flex flex-col text-[13px] gap-2 p-2">
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">All Trees</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Fruit Trees</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Flowering Trees</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Shade Trees</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Medicinal Trees</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Timber Trees</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Evergreen Trees</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Ornamental Plants</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Bamboo</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Climbers</a>
+                        <a href="#" class="hover:bg-[#166534] hover:text-white rounded px-1">Aquatic Plants</a>
+                    </div>
+
+                </div>
+                <div class="font-semibold border-2 w-[600px]">
+                    <h1>Card</h1>
+                </div>
+                <div class="font-semibold border-2 w-[250px]">
+                    <h1>Your Cart</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About the Campaign -->
+    <section id="about">
+        <h2>About the Campaign</h2>
+        <p>Our mission is to combat climate change by planting trees and restoring natural habitats.</p>
+    </section>
+    <!-- Our Impact Section -->
+    <section id="impact">
+        <h2>Our Impact</h2>
+        <p>Discover the positive effects of our tree-planting initiatives on the environment and local communities.</p>
+    </section>
+    <!-- Donate Section -->
+    <section id="donate">
+        <h2>Donate</h2>
+        <p>Your support helps us plant more trees and expand our impact. Every contribution makes a difference!</p>
+        <button>Donate Now</button>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Green Earth. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
