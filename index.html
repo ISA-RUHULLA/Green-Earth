@@ -180,7 +180,8 @@
         <div class="flex justify-between items-center p-2 mx-20">
             <div><img src="./assets/about.png" alt=""></div>
             <div class="text-normal">
-                <p>Green Earth is a global tree plantation initiative dedicated to fighting <br> climate change. Since our
+                <p>Green Earth is a global tree plantation initiative dedicated to fighting <br> climate change. Since
+                    our
                     start, we’ve planted over 500,000 trees <br> worldwide. By joining our campaign, you help restore
                     forests, <br> create habitats for wildlife, and combat global warming.</p>
                 <ul class="list-disc mt-3 ml-5">
@@ -194,7 +195,7 @@
 
     <!-- Our Impact Section -->
     <section id="impact">
-        <div class=" rounded-lg p-3 my-10 bg-[#cff0dc]">
+        <div class="p-3  bg-[#cff0dc]">
             <div class="font-bold text-xl justify-center text-center mt-10">
                 <h2>Our Impact</h2>
             </div>
@@ -214,17 +215,49 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <!-- Donate Section -->
     <section id="donate">
-        <h2>Donate</h2>
-        <p>Your support helps us plant more trees and expand our impact. Every contribution makes a difference!</p>
-        <button>Donate Now</button>
+        <div class="flex flex-col justify-center items-center bg-[#166534] text-white h-full">
+            <div>
+                <h2 class="text-center text-white text-xl font-bold">
+                    Plant a Tree Today
+                </h2>
+            </div>
+            <div class="mt-3 mb-5 bg-[#15803d] rounded p-5">
+                <div class="flex flex-col justify-center text-center w-[500px] gap-2">
+                    <form class="space-y-4">
+                        <!-- Name -->
+                        <input type="text" placeholder="Your Name"
+                            class="w-[450px] p-3 rounded-md bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+
+                        <!-- Email -->
+                        <input type="email" placeholder="Your Email Address"
+                            class="w-[450px] p-3 rounded-md bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+
+                        <!-- Number of Trees -->
+                        <select class="w-[450px] p-3 rounded-md bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            <option>Number of Trees</option>
+                            <option>1</option>
+                            <option>5</option>
+                            <option>10</option>
+                            <option>20</option>
+                        </select>
+
+                        <!-- Button -->
+                        <button type="submit"
+                            class="w-[450px] bg-yellow-400 text-green-900 font-semibold py-3 rounded-full hover:bg-yellow-500 transition">
+                            Donate Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-[#166534] text-white text-center p-4 mt-10">
+    <footer class="bg-[#14532d] text-white text-center p-4">
         <p>&copy; 2024 Green Earth. All rights reserved.</p>
     </footer>
 </body>
