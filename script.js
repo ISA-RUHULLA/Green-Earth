@@ -96,9 +96,9 @@ const displayPlants = (plants) => {
         const plantDiv = document.createElement("div");
         plantDiv.classList.add("plant-item");
         plantDiv.innerHTML = `
-            <div class="flex flex-col gap-1 p-2 ml-2 bg-white rounded-lg">
+            <div class="flex flex-col gap-2 p-2 ml-2 lg:w-[190px] bg-white rounded-lg">
                 <img src="${plant.image}" class="h-[180px] rounded" alt="">
-                <h2 class="font-bold">${plant.name}</h2>
+                <h2 class="font-bold text-left ">${plant.name}</h2>
                 <p class="text-[13px] line-clamp-2">${plant.description}</p>
                 <div class="flex flex-row justify-between items-center">
                     <a href="#" class="px-3 py-1 rounded-full bg-[#dcfce7] text-[#15803D]">${plant.category}</a>

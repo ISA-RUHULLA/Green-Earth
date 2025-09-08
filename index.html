@@ -27,15 +27,15 @@
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-[18px] font-semibold">
-                    <li><a>About</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>Plant a Tree</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#trees">Gallery</a></li>
+                    <li><a href="#donate">Plant a Tree</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
-                <button
+                <a href="#donate"
                     class=" px-5 py-3 rounded-full text-[#15803D] bg-[#FACC15] cursor-pointer hover:bg-yellow-300">Plant
-                    a Tree</button>
+                    a Tree</a>
             </div>
         </div>
     </nav>
@@ -43,37 +43,37 @@
     <section id="banner" class="flex justify-evenly items-center h-[383px] bg-[#CFF0DC]">
         <div class=""><img class="hidden lg:block h-[383px] w-[400px]" src="./assets/hero-leaf1.png" alt=""></div>
         <div class="flex flex-col h-[383px] w-auto justify-center items-center gap-5">
-            <h1 class="p-3 text-xl lg:text-4xl font-bold text-black">Plant a Tree, Grow a Future</h1>
+            <h1 class="p-1 text-xl lg:text-3xl font-bold text-black">Plant a Tree, Grow a Future</h1>
             <p class="text-[13px] text-center">Join our mission to plant 1 million trees and make the Earth greener for
                 future generations.</p>
-            <button href="#trees" class="px-5 py-3 rounded-full text-[#15803D] bg-[#FACC15] cursor-pointer hover:bg-yellow-300">Get
-                Involved</button>
+            <a href="#trees" class="px-5 py-3 rounded-full text-[#15803D] bg-[#FACC15] cursor-pointer hover:bg-yellow-300">Get
+                Involved</a>
         </div>
         <div class=""><img class="hidden lg:block h-[383px] w-[400px]" src="./assets/hero-leaf2.png" alt=""></div>
     </section>
 
     <!-- Trees Details Section -->
     <section id="trees">
-        <div class="text-center w-auto rounded-lg p-3 mx-20">
+        <div class="text-center w-auto rounded-lg p-3 mx-5">
             <div class="font-bold text-lg">Choose Our Trees</div>
             <div id="loading-spinner" class="flex justify-center items-center hidden">
                 <span class="loading loading-dots loading-xl"></span>
             </div>
-            <div class="flex flex-col lg:flex-row justify-center gap-4 md:gap-6 mt-6">
-                <div class="w-full lg:w-[190px]">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-6 mt-6">
+                <div class="w-full lg:w-[200px]">
                     <div class="p-2 font-bold text-center">Categories</div>
                     <div id="app-categorys" class="flex flex-col text-[13px] text-left gap-2 p-2">
                         <!-- js file here  -->
                     </div>
 
                 </div>
-                <div class="w-full lg:w-[800px]">
+                <div class="w-full lg:w-[880px]">
                     <div id="app-plants" class="grid grid-cols-1 lg:grid-cols-3 gap-3">
                         <!-- js file here  -->
                     </div>
                 </div>
 
-                <div id="cart" class=" bg-white rounded-lg p-2 w-[220px]">
+                <div id="cart" class=" bg-white rounded-lg p-2 w-full lg:w-[220px]">
                     <h1 id="cart-items" class="font-bold text-lg">Your Cart</h1>
                     <div id="cart-list"></div>
                     <hr class="my-3">
