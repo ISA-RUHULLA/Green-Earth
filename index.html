@@ -46,7 +46,8 @@
             <h1 class="p-1 text-xl lg:text-3xl font-bold text-black">Plant a Tree, Grow a Future</h1>
             <p class="text-[13px] text-center">Join our mission to plant 1 million trees and make the Earth greener for
                 future generations.</p>
-            <a href="#trees" class="px-5 py-3 rounded-full text-[#15803D] bg-[#FACC15] cursor-pointer hover:bg-yellow-300">Get
+            <a href="#trees"
+                class="px-5 py-3 rounded-full text-[#15803D] bg-[#FACC15] cursor-pointer hover:bg-yellow-300">Get
                 Involved</a>
         </div>
         <div class=""><img class="hidden lg:block h-[383px] w-[400px]" src="./assets/hero-leaf2.png" alt=""></div>
@@ -175,6 +176,21 @@
     <footer class="bg-[#14532d] text-white text-center p-4">
         <p>&copy; 2024 Green Earth. All rights reserved.</p>
     </footer>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div class="modal-title">
+
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
     <script src="./script.js"></script>
 </body>
 

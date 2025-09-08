@@ -62,17 +62,6 @@ function hideSpinner() {
     document.getElementById("app-plants").classList.remove("hidden");
 }
 
-const plantItem = () => {
-     showSpinner();
-    fetch('https://openapi.programming-hero.com/api/plants')
-        .then(res => res.json())
-        .then(data => {
-            plants = data.plants;
-            displayPlants(plants);
-            hideSpinner();
-        });
-};
-
 // Filter plants by category
 function filterPlants(categoryName) {
     showSpinner();
@@ -88,6 +77,17 @@ function filterPlants(categoryName) {
 }
 
 // Display Plants
+const plantItem = () => {
+     showSpinner();
+    fetch('https://openapi.programming-hero.com/api/plants')
+        .then(res => res.json())
+        .then(data => {
+            plants = data.plants;
+            displayPlants(plants);
+            hideSpinner();
+        });
+};
+
 const displayPlants = (plants) => {
     const container = document.getElementById("app-plants");
     container.innerHTML = '';
@@ -98,7 +98,7 @@ const displayPlants = (plants) => {
         plantDiv.innerHTML = `
             <div class="flex flex-col gap-1 p-2 ml-2 lg:w-[210px] bg-white rounded-lg">
                 <img src="${plant.image}" class="h-[180px] rounded" alt="">
-                <h2 class="font-bold text-left ">${plant.name}</h2>
+                <h2 onclick="modalData('${plant.id}')" class="font-bold text-left cursor-pointer ">${plant.name}</h2>
                 <p class="text-[13px] line-clamp-2">${plant.description}</p>
                 <div class="flex flex-row justify-between items-center">
                     <a href="#" class="px-3 py-1 rounded-full bg-[#dcfce7] text-[#15803D]">${plant.category}</a>
@@ -115,6 +115,34 @@ const displayPlants = (plants) => {
         container.appendChild(plantDiv);
     });
 };
+
+// Set Modal
+const modalData = (id) => {
+    const url = `https://openapi.programming-hero.com/api/plant/${id}`;
+    fetch(url)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        displayModalData(data.plants)
+    });
+};
+
+const displayModalData = (plant) => {
+    console.log(plant)
+    const modalTitle = document.querySelector('.modal-title');
+    modalTitle.innerHTML =`
+            <div class="flex flex-col gap-1 p-2 ml-2 lg:w-[400px] bg-white rounded-lg">
+                <img src="${plant.image}" class="h-[180px] rounded" alt="">
+                <h2 class="font-bold text-left ">${plant.name}</h2>
+                <p class="text-[13px]">${plant.description}</p>
+                <div class="flex flex-row justify-between items-center">
+                    <a href="#" class="px-3 py-1 rounded-full bg-[#dcfce7] text-[#15803D]">${plant.category}</a>
+                    <span>$${plant.price}</span>
+                </div>
+            </div>
+    `;
+    document.getElementById('my_modal_5').showModal();
+}
 
 // Cart functions
 function addToCart(name, price) {
